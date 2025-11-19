@@ -94,6 +94,33 @@ export default async function ProjectDetailPage({
           </div>
         </AnimatedSection>
 
+        {/* Additional Images Gallery */}
+        {project.additionalImages && project.additionalImages.length > 0 && (
+          <AnimatedSection animation="slideUp" delay={0.25}>
+            <div className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                Project Gallery
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {project.additionalImages.map((imageUrl, index) => (
+                  <div
+                    key={index}
+                    className="relative w-full h-48 sm:h-64 rounded-xl overflow-hidden bg-gray-200 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-2 border-white group"
+                  >
+                    <Image
+                      src={imageUrl}
+                      alt={`${project.title} - Image ${index + 2}`}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+        )}
+
         {/* Project Details Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           {/* Main Content */}

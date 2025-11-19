@@ -33,9 +33,13 @@ export const mockProjects: IProject[] = [
   },
   {
     id: '4',
-    title: 'Real Estate Platform',
+    title: 'GreenFarm POS',
     description: 'Custom web application for property listings with advanced search, virtual tours, and agent management system.',
-    imageUrl: '/images/projects/real-estate.jpg',
+    imageUrl: '/images/projects/greenfarm_pos.jpeg',
+    additionalImages: [
+      '/images/projects/greenfarm_pos.jpeg',
+      '/images/projects/greenfarm_pos.jpeg'
+    ],
     category: 'Custom Web',
     featured: true,
     tags: ['Next.js', 'TypeScript', 'Real Estate', 'Custom Development'],
