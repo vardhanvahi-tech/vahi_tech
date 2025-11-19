@@ -3,9 +3,9 @@ import { IProject } from '@/types/project';
 export const mockProjects: IProject[] = [
   {
     id: '1',
-    title: 'Premium Fashion Store',
+    title: 'Naveen masale E-commerce',
     description: 'A fully customized Shopify store for a luxury fashion brand featuring advanced filtering, wishlist functionality, and seamless checkout experience.',
-    imageUrl: '/images/projects/fashion-store.jpg',
+    imageUrl: '/images/projects/naveen-masale.png',
     category: 'Shopify',
     featured: true,
     tags: ['E-commerce', 'Shopify', 'Custom Theme', 'Luxury'],

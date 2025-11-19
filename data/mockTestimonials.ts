@@ -1,12 +1,5 @@
-export interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  content: string;
-  avatar: string;
-  rating: number;
-}
+import { Testimonial } from "@/types/testimonial";
+
 
 export const mockTestimonials: Testimonial[] = [
   {
