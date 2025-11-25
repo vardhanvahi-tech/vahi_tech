@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { cn } from '@/lib/utils';
@@ -53,10 +54,18 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-300"
             onClick={closeMobileMenu}
           >
-            Vahitech
+            <div className="relative w-14 h-14 sm:w-14 sm:h-14">
+              <Image
+                src="/images/logos/mainLogoTransparent.png"
+                alt="Vahitech Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -68,8 +77,8 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 className={cn(
                   'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300',
                   isActiveLink(link.href)
-                    ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg shadow-blue-500/30'
-                    : 'text-gray-700 hover:text-primary-600 hover:bg-white/60 hover:shadow-md'
+                    ? 'text-white bg-gradient-to-r from-blue-600 to-emerald-600 shadow-lg shadow-blue-500/30'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-white/60 hover:shadow-md'
                 )}
               >
                 {link.label}
@@ -113,8 +122,8 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 className={cn(
                   'block px-4 py-3 rounded-lg text-base font-medium transition-all duration-300',
                   isActiveLink(link.href)
-                    ? 'text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg shadow-blue-500/30'
-                    : 'text-gray-700 hover:text-primary-600 hover:bg-white/60 hover:shadow-md'
+                    ? 'text-white bg-gradient-to-r from-blue-600 to-emerald-600 shadow-lg shadow-blue-500/30'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-white/60 hover:shadow-md'
                 )}
               >
                 {link.label}

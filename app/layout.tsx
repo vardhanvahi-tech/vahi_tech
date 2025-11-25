@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vahitech - Web Development Agency",
   description: "Professional web development, Shopify, mobile apps, and WordPress solutions",
+  icons: {
+    icon: '/favicon.ico', // Replace this file with your custom icon
+  },
 };
 
 export default function RootLayout({
