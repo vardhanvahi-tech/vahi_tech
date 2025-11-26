@@ -12,25 +12,25 @@ export default function ProjectSpotlight() {
   const featuredProjects = mockProjects.filter(project => project.featured).slice(0, 3);
 
   return (
-    <section className="relative py-20 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 overflow-hidden">
+    <section className="relative py-20 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[var(--color-bg)] via-[var(--color-accent)]/5 to-[var(--color-bg)] overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[var(--color-secondary)]/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-[var(--color-accent)]/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
         <AnimatedSection animation="fadeIn">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 border border-purple-100 mb-6">
-              <Briefcase className="w-4 h-4 text-purple-600" />
-              <span className="text-sm font-medium text-purple-600">Our Work</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-secondary)]/10 border border-[var(--color-secondary)]/20 mb-6">
+              <Briefcase className="w-4 h-4 text-[var(--color-secondary)]" />
+              <span className="text-sm font-medium text-[var(--color-secondary)]">Our Work</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Featured <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Projects</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-text)] mb-6">
+              Featured <span className="bg-gradient-to-r from-[var(--color-secondary)] to-[var(--color-accent)] bg-clip-text text-transparent">Projects</span>
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-[var(--color-text)]/70 max-w-3xl mx-auto leading-relaxed">
               Discover our recent work showcasing innovation, creativity, and technical excellence across platforms
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function ProjectSpotlight() {
         <AnimatedSection animation="fadeIn" delay={0.3}>
           <div className="text-center">
             <Link href="/projects">
-              <Button variant="primary" size="lg" className="group bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/40">
+              <Button variant="primary" size="lg" className="group bg-gradient-to-r from-[var(--color-secondary)] to-[var(--color-accent)] hover:from-[var(--color-primary)] hover:to-[var(--color-secondary)] text-white px-8 py-4 shadow-lg shadow-[var(--color-secondary)]/30 hover:shadow-xl hover:shadow-[var(--color-secondary)]/40">
                 <span>View All Projects</span>
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </Button>

@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
     <footer
       className={cn(
         'w-full',
-        'bg-white',
+        'bg-[var(--color-card)]',
         'border-t border-gray-200',
         'transition-colors duration-200',
         className
@@ -45,7 +45,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           {/* Top Row: Copyright and Social Links */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Copyright Notice */}
-            <div className="text-sm text-gray-600 text-center md:text-left">
+            <div className="text-sm text-[var(--color-text)]/70 text-center md:text-left">
               © {currentYear} Vahitech. All rights reserved.
             </div>
 
@@ -61,11 +61,11 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                     rel="noopener noreferrer"
                     className={cn(
                       'inline-flex items-center justify-center w-10 h-10 rounded-lg',
-                      'text-gray-600',
-                      'hover:text-primary-600',
-                      'hover:bg-gray-100',
+                      'text-[var(--color-text)]/70',
+                      'hover:text-[var(--color-primary)]',
+                      'hover:bg-[var(--color-bg)]',
                       'transition-all duration-150',
-                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2'
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2'
                     )}
                     aria-label={social.label}
                     title={social.label}
@@ -81,7 +81,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           <div className="flex justify-center md:justify-start">
             <Link
               href="/terms"
-              className="text-sm text-gray-600 hover:text-primary-600 transition-colors duration-150 underline-offset-4 hover:underline"
+              className="text-sm text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors duration-150 underline-offset-4 hover:underline"
             >
               Terms and Conditions
             </Link>

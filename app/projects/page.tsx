@@ -15,7 +15,7 @@ export default function ProjectsPage() {
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <AnimatedSection animation="fadeIn">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Projects</span>
+              Our <span className="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent)] bg-clip-text text-transparent">Projects</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Explore our portfolio of successful projects across Shopify, mobile apps, WordPress, and custom web development

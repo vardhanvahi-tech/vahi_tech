@@ -6,12 +6,12 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[var(--color-primary)] via-[var(--color-secondary)] to-[var(--color-primary)]">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient Orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--color-accent)]/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--color-secondary)]/40 rounded-full blur-3xl animate-pulse delay-1000"></div>
         
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_110%)]"></div>
@@ -34,7 +34,7 @@ export default function HeroSection() {
           <AnimatedSection animation="fadeIn" delay={0.1}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 leading-tight">
               <span className="block text-white mb-2">Building Digital</span>
-              <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
+              <span className="block bg-gradient-to-r from-[var(--color-accent)] via-white to-[var(--color-accent)] bg-clip-text text-transparent animate-gradient">
                 Excellence
               </span>
             </h1>
@@ -52,9 +52,9 @@ export default function HeroSection() {
           <AnimatedSection animation="slideUp" delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
               <Link href="/contact">
-                <Button variant="primary" size="lg" className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg shadow-lg shadow-blue-500/50 hover:shadow-xl hover:shadow-blue-500/60 transition-all">
+                <Button variant="primary" size="lg" className="group relative overflow-hidden bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-secondary)] hover:from-[var(--color-accent)] hover:to-[var(--color-primary)] text-white px-8 py-4 text-lg shadow-lg shadow-[var(--color-accent)]/50 hover:shadow-xl hover:shadow-[var(--color-accent)]/60 transition-all">
                   <span className="relative z-10">Start Your Project</span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)] to-[var(--color-primary)] opacity-0 group-hover:opacity-100 transition-opacity"></span>
                 </Button>
               </Link>
               <Link href="/projects">
@@ -76,7 +76,7 @@ export default function HeroSection() {
               ].map((stat, index) => (
                 <div key={index} className="group">
                   <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
-                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[var(--color-accent)] to-white bg-clip-text text-transparent mb-2">
                       {stat.number}
                     </div>
                     <div className="text-sm text-gray-400">

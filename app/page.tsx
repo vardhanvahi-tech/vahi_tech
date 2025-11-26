@@ -12,11 +12,12 @@ export default function Home() {
       {/* Services Overview Section */}
       <ServicesOverview />
 
+      {/* Testimonial Section */}
+      <TestimonialSection />
+
       {/* Project Spotlight Section */}
       <ProjectSpotlight />
 
-      {/* Testimonial Section */}
-      <TestimonialSection />
     </main>
   );
 }
