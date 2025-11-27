@@ -33,9 +33,9 @@ export default function HeroSection() {
           {/* Main Headline */}
           <AnimatedSection animation="fadeIn" delay={0.1}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 leading-tight">
-              <span className="block text-white mb-2">Building Digital</span>
+              <span className="block text-white mb-2">Fueling Brands with</span>
               <span className="block bg-gradient-to-r from-[var(--color-accent)] via-white to-[var(--color-accent)] bg-clip-text text-transparent animate-gradient">
-                Excellence
+                Technology
               </span>
             </h1>
           </AnimatedSection>
@@ -43,8 +43,7 @@ export default function HeroSection() {
           {/* Sub-headline */}
           <AnimatedSection animation="fadeIn" delay={0.2}>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-              Transform your vision into reality with cutting-edge web development, 
-              e-commerce solutions, and mobile apps that drive results
+              We build scalable products and innovative strategies that take your brand to the next level.
             </p>
           </AnimatedSection>
 
@@ -69,9 +68,9 @@ export default function HeroSection() {
           <AnimatedSection animation="fadeIn" delay={0.4}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
-                { number: '100+', label: 'Projects Delivered' },
-                { number: '50+', label: 'Happy Clients' },
-                { number: '5+', label: 'Years Experience' },
+                { number: '10+', label: 'International Project' },
+                { number: '50+', label: 'Domestic Project' },
+                { number: '35+', label: 'Team members' },
                 { number: '24/7', label: 'Support Available' }
               ].map((stat, index) => (
                 <div key={index} className="group">
@@ -79,7 +78,7 @@ export default function HeroSection() {
                     <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[var(--color-accent)] to-white bg-clip-text text-transparent mb-2">
                       {stat.number}
                     </div>
-                    <div className="text-sm text-gray-400">
+                    <div className="text-sm text-(--color-bg)">
                       {stat.label}
                     </div>
                   </div>
