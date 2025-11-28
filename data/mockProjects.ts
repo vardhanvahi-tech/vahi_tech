@@ -3,30 +3,31 @@ import { IProject } from '@/types/project';
 export const mockProjects: IProject[] = [
   {
     id: '1',
-    title: 'Naveen masale E-commerce',
-    description: 'A fully customized Shopify store for a luxury fashion brand featuring advanced filtering, wishlist functionality, and seamless checkout experience.',
+    title: 'Naveen Masale E-commerce Website',
+    description: 'A custom-built e-commerce website designed for a multi-category grocery and spices brand. Includes organized product categorization, subcategories, easy navigation, and optimized structure for better user experience and conversions.',
     imageUrl: '/images/projects/naveen-masale.png',
     additionalImages: [
-      '/images/projects/greenfarm_pos.jpeg',
-      '/images/projects/greenfarm_pos.jpeg'
+      '/images/projects/naveen-masale_1.png',
+      '/images/projects/naveen-masale_2.png'
     ],
-    category: 'Shopify',
+    category: 'Custom Web',
     featured: true,
-    tags: ['E-commerce', 'Shopify', 'Custom Theme', 'Luxury'],
+    tags: ['E-commerce', 'Grocery Store', 'Spices', 'Custom Web Design'],
     completedDate: '2024-01'
+    
   },
   {
     id: '2',
-    title: 'Fitness Tracking App',
-    description: 'Cross-platform mobile application for tracking workouts, nutrition, and fitness goals with real-time sync and social features.',
+    title: 'Green Farm Halal Meat E-commerce Platform',
+    description: 'A full-stack e-commerce solution for Green Farm Halal Meat NSW, featuring product catalog browsing, online ordering, store selection, and an optimized UI for showcasing fresh halal meat products.',
     imageUrl: '/images/projects/greenfarm_ecomm.png',
     additionalImages: [
-      '/images/projects/greenfarm_pos.jpeg',
-      '/images/projects/greenfarm_pos.jpeg'
+      '/images/projects/greenfarm_ecomm_1.png',
+      '/images/projects/greenfarm_ecomm_2.png'
     ],
-    category: 'Mobile',
+    category: 'Custom Web',
     featured: true,
-    tags: ['React Native', 'Mobile', 'Health', 'iOS', 'Android'],
+    tags: ['Next.js', 'React', 'E-commerce', 'UI/UX', 'Full-Stack'],
     completedDate: '2024-03'
   },
   {

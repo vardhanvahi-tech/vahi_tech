@@ -34,10 +34,10 @@ export default async function ServiceDetailPage({
   return (
     <main className="min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
+      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-300/30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-300/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-(--color-accent)/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-(--color-accent)/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto">
@@ -45,7 +45,7 @@ export default async function ServiceDetailPage({
           <AnimatedSection animation="fadeIn">
             <Link
               href="/services"
-              className="inline-flex items-center text-blue-600 hover:text-purple-600 font-medium mb-8 group transition-colors"
+              className="inline-flex items-center text-(--color-primary) hover:text-(--color-secondary) font-medium mb-8 group transition-colors"
             >
               <svg
                 className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform"
@@ -120,7 +120,7 @@ export default async function ServiceDetailPage({
                 </h2>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-(--color-primary) to-(--color-secondary) text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
                       1
                     </div>
                     <div>
@@ -136,7 +136,7 @@ export default async function ServiceDetailPage({
                   </div>
 
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-(--color-primary) to-(--color-secondary) text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
                       2
                     </div>
                     <div>
@@ -152,7 +152,7 @@ export default async function ServiceDetailPage({
                   </div>
 
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-(--color-primary) to-(--color-secondary) text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
                       3
                     </div>
                     <div>
@@ -168,7 +168,7 @@ export default async function ServiceDetailPage({
                   </div>
 
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-(--color-primary) to-(--color-secondary) text-white rounded-xl flex items-center justify-center font-bold mr-4 shadow-lg">
                       4
                     </div>
                     <div>
@@ -304,7 +304,7 @@ export default async function ServiceDetailPage({
                     {service.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
                         <svg
-                          className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-(--color-primary) mr-2 flex-shrink-0 mt-0.5"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -327,7 +327,7 @@ export default async function ServiceDetailPage({
             )}
 
             <AnimatedSection animation="slideUp" delay={0.3}>
-              <div className="relative bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white shadow-2xl overflow-hidden">
+              <div className="relative bg-gradient-to-br from-(--color-primary) to-(--color-secondary) rounded-2xl p-8 text-white shadow-2xl overflow-hidden">
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.1)_1px,transparent_1px)] bg-[size:3rem_3rem]"></div>
                 <div className="relative z-10">
                   <h3 className="text-2xl font-bold mb-3">Ready to Get Started?</h3>
@@ -336,7 +336,7 @@ export default async function ServiceDetailPage({
                   </p>
                   <Link
                     href="/contact"
-                    className="block w-full px-6 py-4 bg-white text-blue-600 rounded-xl font-bold text-center hover:bg-gray-100 transition-all hover:scale-105 shadow-lg"
+                    className="block w-full px-6 py-4 bg-white text-(--color-accent) rounded-xl font-bold text-center hover:bg-gray-100 transition-all hover:scale-105 shadow-lg"
                   >
                     Contact Us →
                   </Link>
@@ -371,13 +371,13 @@ export default async function ServiceDetailPage({
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                       <div className="p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                        <h3 className="text-xl font-bold text-(--color-text) mb-2 group-hover:text-(--color-primary) transition-colors">
                           {project.title}
                         </h3>
                         <p className="text-sm text-gray-600 line-clamp-2 mb-3">
                           {project.description}
                         </p>
-                        <span className="text-sm font-semibold text-blue-600 group-hover:text-purple-600 transition-colors">
+                        <span className="text-sm font-semibold text-(--color-primary) group-hover:text-(--color-accent) transition-colors">
                           View Project →
                         </span>
                       </div>

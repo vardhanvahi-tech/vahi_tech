@@ -11,7 +11,7 @@ interface FooterProps {
 
 const socialLinks = [
   {
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/company/vahi-tech',
     label: 'LinkedIn',
     icon: FiLinkedin,
   },
@@ -21,7 +21,7 @@ const socialLinks = [
     icon: FiTwitter,
   },
   {
-    href: 'https://github.com',
+    href: 'https://github.com/vardhanvahi-tech',
     label: 'GitHub',
     icon: FiGithub,
   },

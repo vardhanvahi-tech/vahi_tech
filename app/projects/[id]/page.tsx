@@ -24,10 +24,10 @@ export default async function ProjectDetailPage({
   return (
     <main className="min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 overflow-hidden">
+      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-(--color-bg) via-p(--color-primary) to-(--color-bg) overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-300/30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-300/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-(--color-accent)/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-(--color-accent)/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto">
@@ -35,7 +35,7 @@ export default async function ProjectDetailPage({
           <AnimatedSection animation="fadeIn">
             <Link
               href="/projects"
-              className="inline-flex items-center text-purple-600 hover:text-pink-600 font-medium mb-8 group transition-colors"
+              className="inline-flex items-center text-(--color-primary) hover:text-(-color-secondary) font-medium mb-8 group transition-colors"
             >
               <svg
                 className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform"
@@ -58,7 +58,7 @@ export default async function ProjectDetailPage({
           <AnimatedSection animation="fadeIn" delay={0.1}>
             <div className="text-center">
               <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
-                <span className="px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full text-sm font-semibold shadow-lg">
+                <span className="px-4 py-2 bg-gradient-to-r from-(--color-primary) to-(--color-secondary) text-white rounded-full text-sm font-semibold shadow-lg">
                   {project.category}
                 </span>
                 {project.featured && (
@@ -297,7 +297,7 @@ export default async function ProjectDetailPage({
                     {project.tags.map((tag, index) => (
                       <span
                         key={index}
-                        className="px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-medium border border-purple-200"
+                        className="px-4 py-2 bg-(--color-primary) text-(--color-bg) rounded-full text-sm font-medium border border-(--color-accent)"
                       >
                         {tag}
                       </span>
@@ -334,13 +334,13 @@ export default async function ProjectDetailPage({
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                       <div className="p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+                        <h3 className="text-xl font-bold text-(--color-text) mb-2 group-hover:text-(--color-primary) transition-colors">
                           {relatedProject.title}
                         </h3>
                         <p className="text-sm text-gray-600 line-clamp-2 mb-3">
                           {relatedProject.description}
                         </p>
-                        <span className="text-sm font-semibold text-purple-600 group-hover:text-pink-600 transition-colors">
+                        <span className="text-sm font-semibold text-(--color-primary) group-hover:text-(--color-secondary) transition-colors">
                           View Project →
                         </span>
                       </div>
@@ -354,7 +354,7 @@ export default async function ProjectDetailPage({
 
         {/* CTA Section */}
         <AnimatedSection animation="fadeIn" delay={0.6}>
-          <div className="relative mt-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-10 sm:p-12 text-center shadow-2xl overflow-hidden">
+          <div className="relative mt-16 bg-gradient-to-br from-(--color-primary) to-(--color-secondary) rounded-2xl p-10 sm:p-12 text-center shadow-2xl overflow-hidden">
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.1)_1px,transparent_1px)] bg-[size:3rem_3rem]"></div>
             <div className="relative z-10">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
@@ -365,7 +365,7 @@ export default async function ProjectDetailPage({
               </p>
               <Link
                 href="/contact"
-                className="inline-block px-10 py-4 bg-white text-purple-600 rounded-xl font-bold hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
+                className="inline-block px-10 py-4 bg-white text-(--color-accent) rounded-xl font-bold hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
               >
                 Get in Touch →
               </Link>

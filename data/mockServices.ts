@@ -56,5 +56,48 @@ export const mockServices: IService[] = [
       'Security Hardening'
     ],
     link: '/contact'
+  },
+  {
+    id: '5',
+    title: 'UI/UX Design',
+    description: 'Beautiful and intuitive user interface and user experience designs that increase engagement and improve product usability.',
+    icon: 'FaPencilRuler',
+    features: [
+      'Wireframing & Prototyping',
+      'User Research & Persona Creation',
+      'Mobile & Web App Design',
+      'Interactive Prototypes',
+      'Design System & Style Guide'
+    ],
+    link: '/contact'
+  },
+  {
+    id: '6',
+    title: 'Digital Marketing',
+    description: 'Boost your online presence with complete digital marketing services including SEO, SMM, SEM, and performance-driven ad campaigns.',
+    icon: 'FaBullhorn',
+    features: [
+      'Social Media Marketing (SMM)',
+      'Search Engine Optimization (SEO)',
+      'Search Engine Marketing (SEM)',
+      'Performance Marketing',
+      'Content Strategy & Branding'
+    ],
+    link: '/contact'
+  },
+  {
+    id: '7',
+    title: 'Python Development',
+    description: 'Powerful backend, automation, AI, and data-driven solutions using Python to build reliable and scalable systems.',
+    icon: 'FaPython',
+    features: [
+      'Backend API Development',
+      'Automation Scripts',
+      'AI & Machine Learning',
+      'Data Processing Pipelines',
+      'FastAPI & Django Applications'
+    ],
+    link: '/contact'
   }
+
 ];

@@ -47,10 +47,10 @@ export default function ContactPage() {
                     Email
                   </h3>
                   <a
-                    href="mailto:info@vahitech.com"
+                    href="mailto:hello@vahitech.in"
                     className="text-blue-600 hover:text-purple-600 font-medium transition-colors"
                   >
-                    info@vahitech.com
+                    hello@vahitech.in
                   </a>
                   <p className="text-sm text-gray-600 mt-2">
                     For general inquiries
@@ -76,7 +76,7 @@ export default function ContactPage() {
                     href="tel:+1234567890"
                     className="text-blue-600 hover:text-green-600 font-medium transition-colors"
                   >
-                    +1 (234) 567-890
+                    +91 89235 37710
                   </a>
                   <p className="text-sm text-gray-600 mt-2">
                     Mon-Fri, 9am-6pm
@@ -99,9 +99,8 @@ export default function ContactPage() {
                     Office
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    123 Tech Street<br />
-                    Suite 456<br />
-                    San Francisco, CA 94102
+                    D26, 4th Floor,Mansarover park<br />
+                    Delhi, India<br />
                   </p>
                 </div>
               </div>
@@ -120,15 +119,16 @@ export default function ContactPage() {
                   <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
                     Follow Us
                   </h3>
-                  <div className="flex flex-col space-y-2">
+                  <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 space-x-2">
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/company/vahi-tech"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-purple-600 font-medium transition-colors"
                     >
                       LinkedIn →
                     </a>
+                    
                     <a
                       href="https://twitter.com"
                       target="_blank"
@@ -138,7 +138,7 @@ export default function ContactPage() {
                       Twitter →
                     </a>
                     <a
-                      href="https://github.com"
+                      href="https://github.com/vardhanvahi-tech"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-purple-600 font-medium transition-colors"
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
         {/* Additional Info Section */}
         <AnimatedSection animation="slideUp" delay={0.5}>
-          <div className="relative bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl shadow-2xl p-8 sm:p-12 overflow-hidden">
+          <div className="relative bg-gradient-to-br from-(--color-primary) to-(--color-secondary) rounded-2xl shadow-2xl p-8 sm:p-12 overflow-hidden">
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.1)_1px,transparent_1px)] bg-[size:3rem_3rem]"></div>
             <div className="relative z-10">
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">

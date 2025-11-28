@@ -41,7 +41,7 @@ export default function AboutPage() {
                 <span className="text-sm font-medium text-blue-600">Our Mission</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Empowering Through <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Innovation</span>
+                Empowering Through <span className="bg-gradient-to-r from-(--color-primary) to-(--color-accent) bg-clip-text text-transparent">Innovation</span>
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed mb-4">
@@ -67,7 +67,7 @@ export default function AboutPage() {
 
         {/* Our Team Section */}
         <AnimatedSection animation="slideUp" delay={0.2}>
-          <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 rounded-2xl shadow-xl p-8 sm:p-12 overflow-hidden">
+          <div className="relative bg-gradient-to-br from-(--color-primary) via-(--color-secondary) to-(--color-primary) rounded-2xl shadow-xl p-8 sm:p-12 overflow-hidden">
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
@@ -76,7 +76,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6">
                 <span className="text-white">Meet Our </span>
-                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Expert Team</span>
+                <span className="bg-gradient-to-r from-(--color-bg) to-(--color-accent) bg-clip-text text-transparent">Expert Team</span>
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-300 leading-relaxed mb-4">
