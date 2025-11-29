@@ -4,7 +4,7 @@ export const mockServices: IService[] = [
   {
     id: '1',
     title: 'Custom Websites',
-    description: 'Tailored web solutions built from the ground up to meet your unique business needs. We create fast, scalable, and modern websites using the latest technologies.',
+    description: 'Tailored web solutions built from the ground up to match your business needs. We build fast, scalable, modern websites using top technologies.',
     icon: 'FaCode',
     features: [
       'Responsive Design',
@@ -18,7 +18,7 @@ export const mockServices: IService[] = [
   {
     id: '2',
     title: 'Shopify Development',
-    description: 'Expert Shopify store development and customization. From theme design to custom app integration, we help you build a powerful e-commerce presence.',
+    description: 'Professional Shopify store development and customization. From theme design to advanced integrations, we build high-converting e-commerce stores.',
     icon: 'FaShoppingCart',
     features: [
       'Custom Theme Development',
@@ -31,8 +31,8 @@ export const mockServices: IService[] = [
   },
   {
     id: '3',
-    title: 'Mobile Apps',
-    description: 'Cross-platform mobile applications that deliver exceptional user experiences on both iOS and Android. Native performance with efficient development.',
+    title: 'Mobile App Development',
+    description: 'Cross-platform mobile applications with a strong focus on speed, UI, and native-like performance for both iOS and Android.',
     icon: 'FaMobileAlt',
     features: [
       'iOS & Android Development',
@@ -46,7 +46,7 @@ export const mockServices: IService[] = [
   {
     id: '4',
     title: 'WordPress Solutions',
-    description: 'Professional WordPress websites with custom themes and plugins. Perfect for blogs, business sites, and content-driven platforms.',
+    description: 'Modern, secure, feature-rich WordPress websites with custom themes and plugins tailored to your content-driven needs.',
     icon: 'FaWordpress',
     features: [
       'Custom Theme Design',
@@ -60,21 +60,21 @@ export const mockServices: IService[] = [
   {
     id: '5',
     title: 'UI/UX Design',
-    description: 'Beautiful and intuitive user interface and user experience designs that increase engagement and improve product usability.',
+    description: 'Beautiful, intuitive user interface and experience designs that increase engagement and improve usability across all platforms.',
     icon: 'FaPencilRuler',
     features: [
       'Wireframing & Prototyping',
-      'User Research & Persona Creation',
+      'User Research & Personas',
       'Mobile & Web App Design',
       'Interactive Prototypes',
-      'Design System & Style Guide'
+      'Design Systems & Style Guides'
     ],
     link: '/contact'
   },
   {
     id: '6',
     title: 'Digital Marketing',
-    description: 'Boost your online presence with complete digital marketing services including SEO, SMM, SEM, and performance-driven ad campaigns.',
+    description: 'Complete digital marketing services that grow your online presence—SEO, SEM, Social Media Marketing, and high-ROI ad campaigns.',
     icon: 'FaBullhorn',
     features: [
       'Social Media Marketing (SMM)',
@@ -88,7 +88,7 @@ export const mockServices: IService[] = [
   {
     id: '7',
     title: 'Python Development',
-    description: 'Powerful backend, automation, AI, and data-driven solutions using Python to build reliable and scalable systems.',
+    description: 'Backend systems, automation, AI, and data solutions built with Python frameworks like Django and FastAPI.',
     icon: 'FaPython',
     features: [
       'Backend API Development',
@@ -98,6 +98,61 @@ export const mockServices: IService[] = [
       'FastAPI & Django Applications'
     ],
     link: '/contact'
+  },
+  {
+    id: '8',
+    title: 'MERN Stack Development',
+    description: 'Full-stack web applications built with MongoDB, Express, React, and Node.js—optimized for performance, UI, and scalability.',
+    icon: 'FaReact',
+    features: [
+      'Full-Stack Development',
+      'REST & GraphQL APIs',
+      'Responsive UI with React',
+      'Node.js Backend',
+      'Scalable Database Architecture'
+    ],
+    link: '/contact'
+  },
+  {
+    id: '9',
+    title: 'PHP Development',
+    description: 'Powerful, stable, and cost-effective backend solutions using modern PHP practices and frameworks.',
+    icon: 'FaPhp',
+    features: [
+      'Custom Backend Development',
+      'API Development',
+      'CMS Customization',
+      'Database-Driven Applications',
+      'High Security & Performance'
+    ],
+    link: '/contact'
+  },
+  {
+    id: '10',
+    title: 'Laravel Development',
+    description: 'High-quality Laravel applications built with clean architecture, secure APIs, and scalable backend logic.',
+    icon: 'FaLaravel',
+    features: [
+      'Laravel API Development',
+      'Authentication & Authorization',
+      'E-commerce Solutions',
+      'Advanced Admin Panels',
+      'Database Optimization'
+    ],
+    link: '/contact'
+  },
+  {
+    id: '11',
+    title: 'Website Maintenance & Support',
+    description: 'Complete care for your website including updates, backups, security monitoring, and performance optimization.',
+    icon: 'FaTools',
+    features: [
+      '24/7 Technical Support',
+      'Security Monitoring',
+      'Speed Optimization',
+      'Bug Fixing',
+      'Regular Backups'
+    ],
+    link: '/contact'
   }
-
 ];
