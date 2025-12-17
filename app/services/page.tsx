@@ -1,6 +1,14 @@
 import { mockServices } from '@/data/mockServices';
 import ServiceCard from '@/components/services/ServiceCard';
 import AnimatedSection from '@/components/ui/AnimatedSection';
+import { generateSEOMetadata } from '@/lib/seo';
+
+export const metadata = generateSEOMetadata({
+  title: 'Web Development Services - Custom Websites, Shopify & Mobile Apps',
+  description: 'Comprehensive web development services including custom websites, Shopify stores, mobile apps, WordPress solutions, and digital marketing. Expert developers ready to help.',
+  keywords: ['web development services', 'Shopify development', 'mobile app development', 'WordPress development', 'digital marketing services'],
+  canonical: '/services'
+});
 
 export default function ServicesPage() {
   return (

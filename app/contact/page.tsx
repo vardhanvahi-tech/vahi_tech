@@ -1,5 +1,13 @@
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Mail, Phone, MapPin, Globe } from 'lucide-react';
+import { generateSEOMetadata } from '@/lib/seo';
+
+export const metadata = generateSEOMetadata({
+  title: 'Contact Vahitech - Get Professional Web Development Services',
+  description: 'Contact Vahitech for custom web development, Shopify stores, mobile apps, and digital marketing services. Get in touch with our expert development team today.',
+  keywords: ['contact vahitech', 'web development services', 'get quote', 'hire developers', 'project consultation'],
+  canonical: '/contact'
+});
 
 export default function ContactPage() {
 

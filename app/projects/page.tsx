@@ -1,6 +1,14 @@
 import { mockProjects } from '@/data/mockProjects';
 import ProjectCard from '@/components/projects/ProjectCard';
 import AnimatedSection from '@/components/ui/AnimatedSection';
+import { generateSEOMetadata } from '@/lib/seo';
+
+export const metadata = generateSEOMetadata({
+  title: 'Web Development Portfolio - Successful Projects & Case Studies',
+  description: 'View our portfolio of successful web development projects including e-commerce stores, mobile apps, and custom websites. See how we help businesses grow online.',
+  keywords: ['web development portfolio', 'Shopify projects', 'mobile app portfolio', 'e-commerce development', 'custom website examples'],
+  canonical: '/projects'
+});
 
 export default function ProjectsPage() {
   return (

@@ -1,5 +1,13 @@
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Target, Users } from 'lucide-react';
+import { generateSEOMetadata } from '@/lib/seo';
+
+export const metadata = generateSEOMetadata({
+  title: 'About Vahitech - Professional Web Development Team & Mission',
+  description: 'Learn about Vahitech\'s mission to empower businesses through innovative web development, e-commerce, and mobile app solutions. Meet our expert development team.',
+  keywords: ['about vahitech', 'web development team', 'company mission', 'professional developers', 'technology solutions'],
+  canonical: '/about'
+});
 
 export default function AboutPage() {
   return (
